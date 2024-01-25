@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 /* IMPORT FONT */
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #edf2f4;
   margin: 0;
@@ -10,12 +14,41 @@ body {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 header {
   height: 10vh;
+  width: 100%;
+  justify-content: center;
   display: flex;
   align-items: center;
+}
+
+.bottom__section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+}
+
+.input__container {
+  width: 100%;
+  max-width: 650px;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgb(38, 57, 77) 0 20px 30px -10px;
+}
+
+#submit__icon {
+  position: absolute;
+  top: -5px;
+  right: 30px;
 }
